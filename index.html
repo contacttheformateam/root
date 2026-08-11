@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Branco Labs Ltd</title>
+<meta name="description" content="Branco Labs Ltd is a software publisher registered in England and Wales, developing mobile applications for iOS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Karla:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#E6E7E3;
+    --surface:#F3F3F0;
+    --ink:#17181A;
+    --muted:#6C6F72;
+    --rule:#CBCCC7;
+    --accent:#2438A8;
+    --measure:44rem;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background-color:var(--paper);
+    background-image:
+      repeating-linear-gradient(to right, rgba(23,24,26,.035) 0 1px, transparent 1px 40px),
+      repeating-linear-gradient(to bottom, rgba(23,24,26,.035) 0 1px, transparent 1px 40px);
+    color:var(--ink);
+    font-family:"Karla",system-ui,sans-serif;
+    font-size:17px;
+    line-height:1.6;
+  }
+  .wrap{max-width:var(--measure);margin:0 auto;padding:clamp(3rem,10vw,7rem) 1.5rem 4rem}
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);margin:0 0 1.5rem;
+  }
+  h1{
+    font-family:"Archivo",sans-serif;font-weight:700;
+    font-size:clamp(3rem,12vw,5.5rem);line-height:.92;
+    letter-spacing:-.035em;margin:0 0 1.75rem;
+  }
+  h1 .ltd{display:block;font-size:.3em;letter-spacing:.02em;color:var(--muted);margin-top:1rem;font-weight:500}
+  .lead{font-size:1.15rem;max-width:34rem;margin:0 0 2.75rem}
+
+  /* App icon — square, iOS corner radius */
+  .app{display:flex;align-items:center;gap:1.5rem;margin:0}
+  .app img{
+    display:block;width:132px;height:132px;
+    border-radius:22.5%;
+    border:1px solid var(--rule);
+    background:var(--surface);
+    object-fit:cover;
+    flex:0 0 auto;
+  }
+  .app figcaption{
+    font-family:"JetBrains Mono",monospace;font-size:.72rem;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--muted);line-height:1.7;
+  }
+  .app figcaption strong{
+    display:block;font-family:"Archivo",sans-serif;font-weight:700;
+    font-size:1.35rem;letter-spacing:-.02em;text-transform:none;color:var(--ink);
+    margin-bottom:.35rem;
+  }
+
+  hr{border:0;border-top:1px solid var(--rule);margin:3.5rem 0}
+  h2{
+    font-family:"Archivo",sans-serif;font-weight:700;
+    font-size:1.05rem;letter-spacing:-.01em;margin:0 0 1rem;
+  }
+  p{margin:0 0 1rem}
+  .plate{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    font-family:"JetBrains Mono",monospace;
+    font-size:.82rem;
+    margin:0;
+  }
+  .plate div{
+    display:flex;gap:1rem;padding:.85rem 1.1rem;
+    border-bottom:1px solid var(--rule);
+  }
+  .plate div:last-child{border-bottom:0}
+  .plate dt{
+    flex:0 0 9.5rem;color:var(--muted);
+    letter-spacing:.06em;text-transform:uppercase;font-size:.68rem;
+    padding-top:.15rem;
+  }
+  .plate dd{margin:0;flex:1}
+  .plate dd span{display:block}
+  a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+  footer{
+    margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule);
+    font-family:"JetBrains Mono",monospace;font-size:.72rem;
+    color:var(--muted);display:flex;flex-wrap:wrap;gap:.5rem 2rem;
+    letter-spacing:.04em;
+  }
+  @media (max-width:520px){
+    .plate div{flex-direction:column;gap:.25rem}
+    .plate dt{flex:none}
+    .app{flex-direction:column;align-items:flex-start;gap:1.25rem}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <p class="eyebrow">Software publisher &middot; England &amp; Wales</p>
+
+  <h1>Branco Labs<span class="ltd">Limited</span></h1>
+
+  <p class="lead">We design and publish mobile applications. Our first app, <strong>Forma: Music Lab</strong>, is in development and will launch on the App Store soon.</p>
+
+  <!-- Save your app icon as forma-icon.png in the same folder as this file (1024×1024 works well) -->
+  <figure class="app">
+    <img src="forma-icon.png" alt="Forma: Music Lab app icon">
+    <figcaption><strong>Forma: Music Lab</strong>Coming soon to iOS</figcaption>
+  </figure>
+
+  <hr>
+
+  <h2>Company details</h2>
+  <dl class="plate">
+    <div><dt>Legal name</dt><dd>Branco Labs Ltd</dd></div>
+    <div><dt>Company no.</dt><dd>17387448</dd></div>
+    <div><dt>Jurisdiction</dt><dd>England and Wales</dd></div>
+    <div><dt>Registered office</dt><dd>
+      <span>82A James Carter Road</span>
+      <span>Mildenhall</span>
+      <span>IP28 7DE</span>
+      <span>United Kingdom</span>
+    </dd></div>
+  </dl>
+
+  <hr>
+
+  <h2>Contact</h2>
+  <p>For support or general enquiries, email <a href="mailto:support@brancolabsltd.com">support@brancolabsltd.com</a>.</p>
+
+  <footer>
+    <span>&copy; 2026 Branco Labs Ltd</span>
+    <a href="privacy-policy.html">Privacy policy</a>
+  </footer>
+
+</main>
+</body>
+</html>
